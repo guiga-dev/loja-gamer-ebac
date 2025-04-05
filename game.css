@@ -1,0 +1,194 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #cc0f0f;
+    color: white;
+    padding: 20px 40px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Bungee Shade', sans-serif;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+header nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav li a:hover {
+    text-decoration: underline;
+}
+
+header .lado {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin-left: auto;
+}
+
+header .lado img {
+    width: 40px;
+}
+
+/* Seção SOBRE A LOJA */
+section .container {
+    display: flex; /* Organiza a imagem e o título lado a lado */
+    align-items: flex-start; /* Alinha os elementos pelo topo */
+    gap: 20px; /* Espaçamento entre imagem e conteúdo */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section img {
+    width: 40%; /* Define a largura da imagem */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    margin-top: 30px; /* Espaço acima da imagem */
+    margin-block: 30px; /* Espaço abaixo da imagem */
+}
+
+section h2 {
+    font-family: 'Bungee', sans-serif;
+    font-size: 28px;
+    margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+.texto {
+    margin-top: 10px; /* Espaçamento abaixo do título */
+    text-align: justify; /* Justifica o texto */
+    font-size: 18px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    section .container {
+        flex-direction: column; /* Empilha os elementos em telas menores */
+        align-items: center;
+    }
+
+    section img {
+        width: 80%; /* Ajusta largura da imagem */
+    }
+
+    section h2 {
+        text-align: center; /* Centraliza o título */
+    }
+
+    .texto {
+        text-align: center; /* Centraliza o texto */
+    }
+}
+
+/* Seção de Contato */
+.contato {
+    display: flex; /* Organiza os elementos lado a lado */
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 5px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fale-conosco,
+.nos-acompanhe {
+    flex: 1; /* Divide igualmente o espaço */
+}
+
+.fale-conosco h3,
+.nos-acompanhe h3 {
+    font-family: 'Bungee', sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #cc0f0f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #a00c0c;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    margin-top: 15px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contato {
+        flex-direction: column; /* Empilha elementos em telas menores */
+        gap: 30px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+.title {
+    font-family: 'Bungee', sans-serif;
+    font-size: 28px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
